@@ -1,0 +1,40 @@
+body {
+     font-family: sans-serif;
+}
+.container {
+     max-width: 1600px;
+     margin: 0px auto;
+     padding: 50px 20px;
+}
+#gallery {
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+     grid-gap: 20px;
+}
+.galleryImage {
+     max-width: 100%;
+     border-radius: 10px;
+     position: relative;
+     cursor: pointer;
+     transition: transform 250ms;
+}
+.galleryImage:hover {
+     transform: translateY(-2px);
+     box-shadow: 3px 3px 10px black;
+}
+#popup {
+     position: fixed;
+     top: 0px;
+     right: 0px;
+     left: 0px;
+     bottom: 0px;
+     background-color: rgba(0,0,0,0.95);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transform: translateY(-100%);
+     padding: 50px;
+}
+#selectedImage {
+     max-height: 100%;
+}
