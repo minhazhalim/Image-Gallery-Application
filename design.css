@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+section {
+     height: 100vh;
+     display: flex;
+     background-color: #ededed;
+     font-family: 'Roboto',sans-serif;
+}
+.room-description {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: #e2d2c0;
+     color: rgb(41,41,41);
+}
+.room-description h1 {
+     padding: 10px;
+     font-size: 40px;
+     text-transform: capitalize;
+}
+.room-description p {
+     font-size: 20px;
+     text-transform: capitalize;
+}
+.room-gallery {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.room-gallery .gallery-highlight {
+     width: 80%;
+     height: 50%;
+}
+.room-preview {
+     display: flex;
+     width: 80%;
+     border: 2px solid #d3baa0;
+}
+.room-preview img {
+     flex-grow: 1;
+     height: 100px;
+     cursor: pointer;
+     opacity: 0.5;
+     transition: opacity 0.4s ease;
+}
+.room-preview img.room-active {
+     opacity: 1;
+}
