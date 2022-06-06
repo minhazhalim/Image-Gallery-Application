@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Image Gallery Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="designing.css"/>
+    <script src="software.js" defer></script>
+  </head>
+  <body>
+    <section class="section nature">
+      <img src="./images/nature-1.jpeg" alt="Nature-1" title="Nature-1" class="image" data-id="1">
+      <img src="./images/nature-2.jpeg" alt="Nature-2" title="Nature-2" class="image" data-id="2">
+      <img src="./images/nature-3.jpeg" alt="Nature-3" title="Nature-3" class="image" data-id="3">
+    </section>
+    <section class="section city">
+      <img src="./images/city-1.jpeg" alt="City-1" title="City-1" class="image" data-id="1">
+      <img src="./images/city-2.jpeg" alt="City-2" title="City-2" class="image" data-id="2">
+      <img src="./images/city-3.jpeg" alt="City-3" title="City-3" class="image" data-id="3">
+      <img src="./images/city-4.jpeg" alt="City-4" title="City-4" class="image" data-id="4">
+      <img src="./images/city-5.jpeg" alt="City-5" title="City-5" class="image" data-id="5">
+    </section>
+    <div class="modal">
+      <button class="close-button"><i class="fas fa-times"></i></button>
+      <div class="modal-content">
+        <button class="previous-button"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+        <img src="./images/city-1.jpeg" alt="City-1" class="main-image">
+        <h3 class="image-name">image name</h3>
+        <div class="modal-images">
+          <img src="./images/city-1.jpeg" alt="City-1" title="City-1" class="modal-image" id="1">
+          <img src="./images/city-2.jpeg" alt="City-2" title="City-2" class="modal-image selected" id="2">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
