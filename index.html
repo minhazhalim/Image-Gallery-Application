@@ -6,21 +6,41 @@
      <meta name="viewport" content="width=device-width,initial-scale=1.0">
      <title>Image Gallery Application</title>
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
      <script src="script.js" defer></script>
 </head>
 <body>
-     <div class="container">
-          <div class="main-image"><img src="https://preview.ibb.co/gxVppG/img1.jpg" id="current"></div>
-          <div class="images">
-               <img src="https://preview.ibb.co/gxVppG/img1.jpg">
-               <img src="https://preview.ibb.co/iZ3Lww/img2.jpg">
-               <img src="https://preview.ibb.co/iQsPOb/img3.jpg">
-               <img src="https://preview.ibb.co/gFFdib/img4.jpg">
-               <img src="https://preview.ibb.co/hS5ppG/img5.jpg">
-               <img src="https://preview.ibb.co/goKtGw/img6.jpg">
-               <img src="https://preview.ibb.co/bSWjOb/img7.jpg">
-               <img src="https://preview.ibb.co/i2o9pG/img8.jpg">
+     <div class="lightbox">
+          <div class="wrapper">
+               <header>
+                    <div class="photographer">
+                         <i class="uil uil-camera"></i>
+                         <span></span>
+                    </div>
+                    <div class="buttons">
+                         <i class="uil uil-import"></i>
+                         <i class="close-icon uil uil-times"></i>
+                    </div>
+               </header>
+               <div class="preview-image">
+                    <div class="image"><img src="" alt="Preview-Image"></div>
+               </div>
           </div>
      </div>
+     <section class="search">
+          <img src="./images/search-img.jpg" alt="Search-Image">
+          <div class="content">
+               <h1>image gallery with javascript</h1>
+               <p>search and download any images within a second</p>
+               <div class="search-box">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="search images">
+               </div>
+          </div>
+     </section>
+     <section class="gallery">
+          <ul class="images"></ul>
+          <button class="load-more">load more</button>
+     </section>
 </body>
 </html>
