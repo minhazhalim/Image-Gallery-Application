@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Image Gallery Application</title>
+     <link rel="stylesheet" href="halim.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins&display=swap" rel="stylesheet">
+     <script src="zim.js" defer></script>
+</head>
+<body>
+     <section class="gallery-section">
+          <div class="container">
+               <h1 class="title">image gallery</h1>
+               <div class="controls">
+                    <input type="text" id="searchBox" placeholder="search images">
+                    <div class="filter-buttons">
+                         <button class="filter-button active" data-filter="all">all</button>
+                         <button class="filter-button" data-filter="nature">nature</button>
+                         <button class="filter-button" data-filter="people">people</button>
+                         <button class="filter-button" data-filter="technology">technology</button>
+                    </div>
+               </div>
+               <div class="gallery" id="gallery">
+                    <div class="gallery-item" data-category="nature" data-title="forest trail">
+                         <img src="./images/Forest Trail.jpg" alt="Forest Trail">
+                         <p>forest trail</p>
+                    </div>
+                    <div class="gallery-item" data-category="nature" data-title="Mountain View">
+                         <img src="./images/Mountain View.jpg" alt="Mountain View">
+                         <p>mountain view</p>
+                    </div>
+                    <div class="gallery-item" data-category="nature" data-title="Beach Sunset">
+                         <img src="./images/Beach Sunset.jpg" alt="Beach Sunset">
+                         <p>beach sunset</p>
+                    </div>
+                    <div class="gallery-item" data-category="nature" data-title="River Stream">
+                         <img src="./images/River Stream.jpg" alt="River Stream">
+                         <p>river stream</p>
+                    </div>
+                    <div class="gallery-item" data-category="technology" data-title="Laptop Workspace">
+                         <img src="./images/Laptop Workspace.jpg" alt="Laptop Workspace">
+                         <p>laptop workspace</p>
+                    </div>
+                    <div class="gallery-item" data-category="technology" data-title="Smartphone Setup">
+                         <img src="./images/Smartphone Setup.jpg" alt="Smartphone Setup">
+                         <p>smartphone setup</p>
+                    </div>
+                    <div class="gallery-item" data-category="technology" data-title="Tech Accessories">
+                         <img src="./images/Tech Accessories.jpg" alt="Tech Accessories">
+                         <p>tech accessories</p>
+                    </div>
+                    <div class="gallery-item" data-category="people" data-title="smiling woman">
+                         <img src="./images/smiling woman.jpg" alt="smiling woman">
+                         <p>smiling woman</p>
+                    </div>
+                    <div class="gallery-item" data-category="people" data-title="Team Meting">
+                         <img src="./images/Team Meting.jpg" alt="Team Meting">
+                         <p>team meting</p>
+                    </div>
+                    <div class="gallery-item" data-category="people" data-title="street portrait">
+                         <img src="./images/street portrait.jpg" alt="street portrait">
+                         <p>street portrait</p>
+                    </div>
+               </div>
+          </div>
+     </section>
+</body>
+</html>
